@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web4All Accesible – Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="Logos de Accesibilidad Web4All.png" />
+
+</head>
+
+<body>
+
+    <!-- Enlace de salto accesible -->
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ================================
+         HERO PRINCIPAL
+    ================================= -->
+<div class="hero-wrapper">
+
+    <header class="hero-grid">
+
+        <div class="hero-text">
+            <h1 class="hero-title">
+                WEB4 ALL: <br>
+                Diseño Web Accesible<br>
+                Para Todos
+            </h1>
+
+            <p class="hero-subtitle">
+                Aprende cómo hacer sitios web realmente inclusivos...
+            </p>
+
+            <a href="guias.html" class="hero-button">Comenzar Guía</a>
+        </div>
+
+        <div class="hero-image-container">
+            <img 
+                src="Ejemplo accesible.png"
+                alt="Vista previa accesible"
+                class="hero-image"
+            />
+        </div>
+
+    </header>
+
+</div>
+
+
+
+    <!-- ================================
+         NAVEGACIÓN PRINCIPAL
+    ================================= -->
+    <nav class="nav-bar" aria-label="Navegación principal">
+
+        <!-- Logo de Web4All dentro de la navegación -->
+        <a href="index.html" class="nav-logo">
+            <img 
+                src="Logos de Accesibilidad Web4All.png"
+                alt="Logo Web4All: enlace a inicio"
+            />
+        </a>
+
+        <!-- Menú principal -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="guias.html">Guías por discapacidad</a></li>
+            <li><a href="videos.html">Videos de ejemplo</a></li>
+            
+    <div class="nav-underline"></div>
+        </ul>
+
+    </nav>
+
+
+
+
+    <!-- ================================
+         CONTENIDO PRINCIPAL
+    ================================= -->
+    <main id="contenido">
+        
+        <h2>Bienvenido/a</h2>
+        <p>
+            Este sitio web está pensado para ayudarte a crear sitios accesibles
+            para personas con discapacidad visual, auditiva y motora/kinestésica.
+        </p>
+
+
+        <!-- ================================
+             TARJETAS GLASS: ¿QUÉ ES ACCESIBILIDAD?
+        ================================= -->
+        <section class="accesibilidad" aria-labelledby="que-es-accesibilidad">
+    
+            <h2 id="que-es-accesibilidad">¿Qué es la accesibilidad web?</h2>
+
+            <p class="accesibilidad-descripcion">
+                La accesibilidad web busca que todas las personas, sin importar sus capacidades,
+                puedan navegar, comprender y usar un sitio web de manera efectiva.
+                Esto incluye a usuarios con discapacidades visuales, auditivas o motoras.
+            </p>
+
+            <div class="cards-container">
+
+                <!-- Card 1 -->
+                <article class="glass-card" aria-labelledby="card1-title">
+                    <img 
+                        src="principio_perceptible.webp"
+                        alt="Icono representando accesibilidad visual"
+                        class="card-icon"
+                    />
+                    <h3 id="card1-title">Perceptible</h3>
+                    <p>
+                        La información debe presentarse de manera clara.  
+                        Esto incluye buen contraste, texto alternativo y contenido visible para todos.
+                    </p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="glass-card" aria-labelledby="card2-title">
+                    <img 
+                        src="Operable.png"
+                        alt="Icono representando accesibilidad auditiva"
+                        class="card-icon"
+                    />
+                    <h3 id="card2-title">Operable</h3>
+                    <p>
+                        La página debe poder navegarse con teclado, sin movimientos precisos y sin obstáculos.
+                    </p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="glass-card" aria-labelledby="card3-title">
+                    <img 
+                        src="Comprensible.png"
+                        alt="Icono representando accesibilidad motora"
+                        class="card-icon"
+                    />
+                    <h3 id="card3-title">Comprensible</h3>
+                    <p>
+                        El contenido debe ser fácil de entender: lenguaje claro, consistente y sin confusiones.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+     SECCIÓN A) Errores comunes de accesibilidad
+========================================== -->
+<section class="errores" aria-labelledby="errores-title">
+
+    <h2 id="errores-title">Errores comunes de accesibilidad</h2>
+
+    <p class="errores-descripcion">
+        Estos son algunos de los errores más frecuentes al diseñar sitios web.
+        Todos tienen un impacto negativo en la experiencia de usuarios con 
+        discapacidad visual, auditiva o motora.
+    </p>
+
+    <div class="errores-container">
+
+        <!-- Error 1 -->
+        <article class="error-card" aria-labelledby="e1-title">
+            <h3 id="e1-title">❌ Bajo contraste</h3>
+            <p>
+                El texto difícil de leer afecta principalmente a personas con baja visión
+                o sensibilidad al contraste. Usa una relación de al menos 4.5:1.
+            </p>
+        </article>
+
+        <!-- Error 2 -->
+        <article class="error-card" aria-labelledby="e2-title">
+            <h3 id="e2-title">❌ Imágenes sin texto alternativo</h3>
+            <p>
+                Las personas que usan lectores de pantalla no pueden comprender el 
+                contenido visual si no se proporciona una descripción significativa.
+            </p>
+        </article>
+
+        <!-- Error 3 -->
+        <article class="error-card" aria-labelledby="e3-title">
+            <h3 id="e3-title">❌ No se puede navegar con teclado</h3>
+            <p>
+                Muchos usuarios dependen exclusivamente del teclado para navegar.
+                Asegúrate de que todos los elementos sean alcanzables con Tab.
+            </p>
+        </article>
+
+        <!-- Error 4 -->
+        <article class="error-card" aria-labelledby="e4-title">
+            <h3 id="e4-title">❌ Elementos sin etiqueta o nombre accesible</h3>
+            <p>
+                Botones o enlaces sin etiquetas claras confunden a los lectores 
+                de pantalla. Usa textos descriptivos y evita "clic aquí".
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     SECCIÓN B) Recursos y Descargas oficiales
+========================================== -->
+<section class="recursos" aria-labelledby="recursos-title">
+
+    <h2 id="recursos-title">Recursos oficiales y descargas</h2>
+
+    <p class="recursos-descripcion">
+        Aquí tienes enlaces confiables para aprender más sobre accesibilidad web,
+        normativas internacionales y herramientas de evaluación.
+    </p>
+
+    <div class="recursos-container">
+
+        <!-- Recurso 1 -->
+        <article class="recurso-card">
+            <h3>WCAG 2.2 (W3C)</h3>
+            <p>Normativa internacional principal para accesibilidad web.</p>
+            <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" 
+               target="_blank" 
+               rel="noopener" 
+               class="recurso-link">
+               Ver recurso
+            </a>
+        </article>
+
+        <!-- Recurso 2 -->
+        <article class="recurso-card">
+            <h3>WAVE – Evaluador de accesibilidad</h3>
+            <p>Herramienta gratuita para evaluar tu sitio web.</p>
+            <a href="https://wave.webaim.org/" 
+               target="_blank" 
+               rel="noopener" 
+               class="recurso-link">
+               Ir a WAVE
+            </a>
+        </article>
+
+        <!-- Recurso 3 -->
+        <article class="recurso-card">
+            <h3>WebAIM</h3>
+            <p>Guías, artículos y cursos sobre accesibilidad web.</p>
+            <a href="https://webaim.org/" 
+               target="_blank" 
+               rel="noopener" 
+               class="recurso-link">
+               Aprender más
+            </a>
+        </article>
+
+        <!-- Recurso 4 -->
+        <article class="recurso-card">
+            <h3>Descargar checklist PDF</h3>
+            <p>Checklist básico de accesibilidad web para diseño y desarrollo.</p>
+            <a href="#" class="recurso-link">
+                Descargar (próximamente)
+            </a>
+        </article>
+
+    </div>
+
+</section>
+
+
+
+
+        <!-- ================================
+             SECCIONES YA EXISTENTES
+        ================================= -->
+        <section class="section-card" aria-labelledby="por-que-accesible">
+            <h3 id="por-que-accesible">¿Por qué es importante la accesibilidad?</h3>
+            <p>
+                La accesibilidad web permite que todas las personas puedan usar un
+                sitio, independientemente de sus capacidades, dispositivos o
+                contexto. También ayuda a cumplir estándares como las WCAG y
+                mejora la experiencia para todos los usuarios.
+            </p>
+        </section>
+
+  <section class="section-card" aria-labelledby="como-usar-sitio">
+    <h3 id="como-usar-sitio">Cómo usar este sitio</h3>
+
+    <p>
+        Este portal está diseñado para ayudarte a crear experiencias digitales inclusivas de manera clara y guiada.
+        Puedes explorar su contenido según tus necesidades o nivel de conocimiento. Las secciones principales son:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Guías por discapacidad:</strong>
+            Recomendaciones prácticas, ejemplos reales y errores frecuentes organizados por tipo de discapacidad
+            (visual, auditiva y motora/kinestésica). Cada guía explica cómo adaptar tu sitio para que todos
+            puedan navegarlo sin barreras.
+        </li>
+
+        <li>
+            <strong>Videos de ejemplo:</strong>
+            Clips accesibles con audiodescripción, subtítulos y closed captions para ayudarte a visualizar
+            cómo se implementa la accesibilidad en situaciones reales.
+        </li>
+
+        <li>
+            <strong>Recursos y herramientas oficiales:</strong>
+            Enlaces confiables como WCAG, WebAIM y WAVE que te permiten validar, mejorar y profundizar
+            en los estándares internacionales de accesibilidad.
+        </li>
+
+        <li>
+            <strong>Errores comunes que debes evitar:</strong>
+            Aprende qué prácticas afectan la accesibilidad y cómo corregirlas de manera sencilla y efectiva.
+        </li>
+    </ul>
+</section>
+
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer>
+        <p>© 2025 Web4All – Sitio de ejemplo accesible.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web4All – Videos de ejemplo accesibles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="Logos de Accesibilidad Web4All.png" />
+
+</head>
+
+<body>
+
+    <!-- Enlace accesible -->
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ================================
+         HEADER / TÍTULO PRINCIPAL
+    ================================= -->
+    <header class="page-header">
+        <div class="title-wrapper">
+            <h1>Videos de Ejemplo Accesibles</h1>
+        </div>
+    </header>
+
+    <!-- ================================
+         NAVEGACIÓN PRINCIPAL
+    ================================= -->
+    <nav class="nav-bar" aria-label="Navegación principal">
+        <a href="index.html" class="nav-logo">
+            <img 
+                src="Logos de Accesibilidad Web4All.png"
+                alt="Logo Web4All: enlace a inicio"
+            />
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="guias.html">Guías por discapacidad</a></li>
+            <li><a href="videos.html">Videos de ejemplo</a></li>
+
+            <!-- Barra animada -->
+            <div class="nav-underline"></div>
+        </ul>
+    </nav>
+
+    <!-- ================================
+         CONTENIDO PRINCIPAL
+    ================================= -->
+    <main id="contenido">
+
+        <section class="video-section">
+            
+            <h2 style="margin-bottom: 2rem;">Ejemplos de buenas prácticas</h2>
+
+            <!-- ======================================
+                 VIDEO CARD 1 — AUDIO DESCRIPCIÓN
+            ====================================== -->
+            <div class="video-card">
+                
+                <span class="video-badge">Audio descripción</span>
+
+                <h3 class="video-title">Video 1: Escena con audio descripción</h3>
+
+                <p class="video-description">
+                    Este clip incluye narración adicional que describe acciones y elementos visuales 
+                    importantes para personas con discapacidad visual.
+                </p>
+
+                <!-- Video local (tu archivo .mp4) -->
+                <div class="video-frame">
+                    <video controls width="100%">
+                        <source src="men in black audiodescriptionn.mp4" type="video/mp4" />
+                        <track kind="captions" src="subtitulos1.vtt" srclang="es" label="Español" default />
+                        Tu navegador no soporta el elemento video.
+                    </video>
+                </div>
+
+                <p class="video-description">
+                    La audiodescripción permite comprender acciones que no se mencionan explícitamente 
+                    en los diálogos, ayudando a las personas ciegas o con baja visión.
+                </p>
+
+            </div>
+
+
+            <!-- ======================================
+                 VIDEO CARD 2 — SUBTÍTULOS CC
+            ====================================== -->
+            <div class="video-card">
+                
+                <span class="video-badge">Subtítulos CC</span>
+
+                <h3 class="video-title">Video 2: Closed captions / Subtítulos para personas sordas</h3>
+
+                <p class="video-description">
+                    Este video contiene subtítulos cerrados (CC) que describen los diálogos y sonidos 
+                    relevantes, permitiendo a usuarios con discapacidad auditiva comprender la escena.
+                </p>
+
+                <!-- Video YouTube accesible -->
+                <div class="video-frame">
+                    <iframe 
+                        src="https://www.youtube.com/embed/fjAJYzMXj5A"
+                        title="Video de ejemplo con subtítulos cerrados"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <p class="video-description">
+                    Los subtítulos cerrados detallan música, ruidos ambientales y efectos que afectan 
+                    la narrativa, conforme a WCAG 2.2 nivel A y AA.
+                </p>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer>
+        <p>© 2025 Web4All – Videos de ejemplo accesibles.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web4All – Guías por discapacidad</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script> 
+    <link rel="icon" type="image/png" href="Logos de Accesibilidad Web4All.png" />
+
+</head>
+
+<body>
+
+    <!-- Enlace de salto accesible -->
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ================================
+         HEADER / TÍTULO PRINCIPAL
+    ================================= -->
+    <header class="page-header">
+        <div class="title-wrapper">
+            <h1>Guías de Accesibilidad</h1>
+        </div>
+    </header>
+
+    <!-- ================================
+         NAVEGACIÓN PRINCIPAL
+    ================================= -->
+    <nav class="nav-bar" aria-label="Navegación principal">
+
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+            <img 
+                src="Logos de Accesibilidad Web4All.png"
+                alt="Logo Web4All: enlace a inicio"
+            />
+        </a>
+
+        <!-- Menú -->
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="guias.html">Guías por discapacidad</a></li>
+            <li><a href="videos.html">Videos de ejemplo</a></li>
+
+            <!-- Barra animada -->
+            <div class="nav-underline"></div>
+        </ul>
+    </nav>
+
+        <!-- BANNER ILUSTRATIVO -->
+<section class="banner-accesibilidad">
+    <img 
+        src="guia accesibilidad visual.png"
+        alt=""
+    />
+</section>
+    <!-- ================================
+         TABLA DE CONTENIDOS FLOTANTE
+    ================================= -->
+<div class="guia-layout">
+    <nav class="toc" aria-label="Tabla de contenidos">
+        <h2 class="toc-title">Contenido</h2>
+
+        
+        <ul class="toc-list">
+            <li><a href="#visual-anchor">Accesibilidad visual</a></li>
+            <li><a href="#auditiva-anchor">Accesibilidad auditiva</a></li>
+            <li><a href="#motora-anchor">Accesibilidad motora</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- ================================
+         CONTENIDO PRINCIPAL
+    ================================= -->
+    <main id="contenido">
+
+        <h2>Recomendaciones básicas</h2>
+
+        <!-- 🔵 Anchor invisible para sección VISUAL -->
+        <div id="visual-anchor" class="section-anchor"></div>
+
+        <!-- Sección: Visual -->
+        <section class="guia-card" aria-labelledby="visual">
+            
+            <div class="guia-icon visual-icon">
+                👁️
+            </div>
+
+            <div class="guia-content">
+                <h3 id="visual">Accesibilidad para personas con discapacidad visual</h3>
+
+                <p class="guia-intro">
+                    Este tipo de accesibilidad incluye usuarios con baja visión, ceguera total,
+                    daltonismo o sensibilidad al contraste. Los sitios deben ser perceptibles
+                    mediante texto, estructura y alternativas visuales adecuadas.
+                </p>
+
+                <h4>Recomendaciones principales</h4>
+                <ul>
+                    <li>Usar encabezados en orden lógico (h1 → h2 → h3).</li>
+                    <li>Agregar texto alternativo útil en todas las imágenes.</li>
+                    <li>Garantizar contraste AA o AAA según WCAG.</li>
+                    <li>Permitir zoom hasta 200% sin romper el diseño.</li>
+                    <li>Evitar texto incrustado dentro de imágenes.</li>
+                </ul>
+
+                <h4>Errores frecuentes</h4>
+                <div class="guia-warning">
+                    ⚠ Texto gris muy claro en fondos claros.  
+                    ⚠ Imágenes importantes sin alt.  
+                    ⚠ Títulos fuera de orden (saltarse de h1 a h4).  
+                    ⚠ Texto pequeño sin opción de aumento.
+                </div>
+
+                <h4>Ejemplo accesible</h4>
+                <div class="ejemplo-code">
+
+
+                    <img src="image.png" 
+     alt="Dibujo de una persona ciega usando una laptop con su perro guía"
+     class="guia-ejemplo-img">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 🟣 Anchor invisible para sección AUDITIVA -->
+        <div id="auditiva-anchor" class="section-anchor"></div>
+
+        <!-- Sección: Auditiva -->
+        <section class="guia-card" aria-labelledby="auditiva">
+            
+            <div class="guia-icon auditiva-icon">
+                🔊
+            </div>
+
+            <div class="guia-content">
+                <h3 id="auditiva">Accesibilidad para personas con discapacidad auditiva</h3>
+
+                <p class="guia-intro">
+                    Los usuarios con discapacidad auditiva pueden presentar pérdida parcial, total 
+                    o sensibilidad reducida al sonido. Para ellos, todo contenido audible debe contar 
+                    con alternativas textuales claras y sincronizadas.
+                </p>
+
+                <h4>Recomendaciones principales</h4>
+                <ul>
+                    <li>Agregar subtítulos sincronizados en todos los videos y clips de audio.</li>
+                    <li>Incluir transcripciones completas de contenido multimedia.</li>
+                    <li>Mostrar mensajes visuales cuando ocurra una alerta o notificación.</li>
+                    <li>No depender únicamente del audio para transmitir instrucciones.</li>
+                    <li>Asegurar que los subtítulos describan sonidos importantes (risas, música, explosiones).</li>
+                    <li>Evitar música de fondo muy alta que dificulte la lectura o comprensión del video.</li>
+                </ul>
+
+                <h4>Errores frecuentes</h4>
+                <div class="guia-warning">
+                    ⚠ Videos sin subtítulos o subtítulos automáticos incorrectos.<br>
+                    ⚠ Transcripciones pobres que omiten contexto o diálogos secundarios.<br>
+                    ⚠ Indicaciones como “haz clic cuando escuches el sonido” sin alternativa visual.<br>
+                    ⚠ Avisos importantes que solo emiten sonido sin texto en pantalla.
+                </div>
+
+                <h4>Ejemplo accesible</h4>
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/XpjpnlGaG-g"
+                        title="Video accesible de ejemplo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- 🟢 Anchor invisible para sección MOTORA -->
+        <div id="motora-anchor" class="section-anchor"></div>
+
+        <!-- Sección: Motora -->
+        <section class="guia-card" aria-labelledby="motora">
+            
+            <div class="guia-icon motora-icon">
+                🖐️
+            </div>
+
+            <div class="guia-content">
+                <h3 id="motora">Accesibilidad para personas con discapacidad motora o kinestésica</h3>
+
+                <p class="guia-intro">
+                    Este grupo incluye usuarios con limitaciones de movilidad fina, temblores, dificultad 
+                    al realizar clics precisos o dependencia de dispositivos como teclado, switches o 
+                    tecnologías de asistencia. El diseño debe minimizar tareas complejas y ofrecer 
+                    alternativas amigables.
+                </p>
+
+                <h4>Recomendaciones principales</h4>
+                <ul>
+                    <li>Permitir el uso completo del sitio usando solo teclado.</li>
+                    <li>Evitar objetivos táctiles muy pequeños (mínimo recomendado: 44px × 44px).</li>
+                    <li>Dar tiempo suficiente para completar formularios o acciones.</li>
+                    <li>Evitar gestos complejos: arrastrar, mantener presionado, rotar, etc.</li>
+                    <li>Usar botones grandes, espaciados y con estados de foco visibles.</li>
+                    <li>Permitir navegación lineal clara para usuarios con switches.</li>
+                </ul>
+
+                <h4>Errores frecuentes</h4>
+                <div class="guia-warning">
+                    ⚠ Botones ultrapequeños difíciles de presionar.<br>
+                    ⚠ Formularios que se cierran al mover el cursor por accidente.<br>
+                    ⚠ Carruseles que requieren arrastrar para moverse.<br>
+                    ⚠ Falta de estados de foco visibles en elementos interactivos.<br>
+                    ⚠ Enlaces muy juntos que provocan clics erróneos.
+                </div>
+
+                <h4>Ejemplo accesible</h4>
+                <div class="ejemplo-code">
+                    <pre>
+    <button class="btn-accesible">Enviar formulario</button>
+
+    <style>
+    .btn-accesible {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: none;
+        background: #00c2a8;
+        color: #fff;
+    }
+    .btn-accesible:focus {
+        outline: 3px solid yellow;
+    }
+    </style>
+                    </pre>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer>
+        <p>© 2025 Web4All – Guías de accesibilidad.</p>
+    </footer>
+
+</body>
+</html>
